@@ -59,3 +59,13 @@
     gap: 24px;
   }
 }
+
+@media (max-width: 796px) {
+  .registration-card {
+    padding: 24px;
+  }
+
+  .family-member {
+    grid-template-columns: 1fr;
+  }
+}
