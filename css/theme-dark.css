@@ -1,0 +1,52 @@
+.section--hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+  background: radial-gradient(circle at top, #1a1f4a, #0b0e1a);
+
+  position: relative;
+  overflow: hidden;
+}
+
+.section--hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/ui/космос.jpeg") center / cover no-repeat;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.hero {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.85;
+  margin-bottom: 40px;
+}
+
+.hero .btn {
+  padding: 16px 36px;
+  font-size: 16px;
+}
+
+.hero .btn:hover {
+  background-color: #5946c3;
+  opacity: 1;
+  transform: scale(1.04);
+}
+.competition-card,
+.feedback-card {
+  background-color: #161a36;
+  padding: 20px;
+  border-radius: 8px;
+}

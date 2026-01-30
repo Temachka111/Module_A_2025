@@ -1,0 +1,305 @@
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn--primary {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.btn--outline {
+  border: 2px solid #6c5ce7;
+  color: #6c5ce7;
+}
+
+.header {
+  background-color: #0f1224;
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.nav__list {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.footer {
+  background-color: #0f1224;
+  padding: 60px 0;
+  font-size: 14px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer__info a {
+  display: block;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.footer__nav ul {
+  list-style: none;
+}
+
+.footer__nav li {
+  margin-bottom: 6px;
+}
+
+.footer__nav a {
+  opacity: 0.8;
+}
+
+.footer__nav a:hover {
+  opacity: 1;
+}
+
+
+/* auth */
+
+.section--auth {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.section--auth::before,
+.section--auth::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(122,108,255,0.25), transparent 70%);
+  filter: blur(80px);
+}
+
+.section--auth::before {
+  top: 20%;
+  left: -200px;
+}
+
+.section--auth::after {
+  bottom: 20%;
+  right: -200px;
+}
+
+.section--auth .container {
+  display: flex;
+  justify-content: center;
+}
+
+
+.auth-card {
+  background: linear-gradient(180deg, #1b1f46, #12152e);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow:
+    0 20px 40px rgba(0, 0, 0, 0.4),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+  position: relative;
+  backdrop-filter: blur(6px);
+}
+.auth-card::before {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  border-radius: inherit;
+  background: linear-gradient(45deg, #7a6cff, transparent);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form input {
+  height: 48px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  background-color: #0f1224;
+  color: #fff;
+}
+
+.auth-form input::placeholder {
+  color: #aaa;
+}
+
+.btn--full {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.auth-link {
+  text-align: center;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.auth-link:hover {
+  opacity: 1;
+}
+
+
+/* блок о нас */
+
+.section--about {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about__content h2 {
+  margin-bottom: 20px;
+}
+
+.about__content p {
+  font-size: 16px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+.about__image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* блок с конкурсами */
+
+.section--competitions {
+  padding-top: 140px;
+  padding-bottom: 140px;
+}
+
+.competitions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.competition-card {
+  background: linear-gradient(180deg, #1b1f46, #12152e);
+  border-radius: 20px;
+  padding: 30px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.competition-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.competition-card h3 {
+  margin-bottom: 12px;
+}
+
+.competition-card p {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* отзывы */
+
+.section--feedback {
+  padding: 140px 0;
+}
+
+.feedback-card {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  max-width: 700px;
+  background: linear-gradient(180deg, #1b1f46, #12152e);
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+}
+
+.feedback-avatar img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.feedback-text {
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+.feedback-author {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* подписка на новости */
+
+.section--subscribe {
+  padding: 140px 0;
+}
+
+.subscribe-card {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #1b1f46, #12152e);
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.subscribe-form input[type="email"] {
+  height: 48px;
+  border-radius: 10px;
+  border: none;
+  padding: 0 16px;
+  background-color: #0f1224;
+  color: #fff;
+}
+
+.subscribe-checkbox {
+  font-size: 14px;
+  opacity: 0.8;
+  text-align: left;
+}
