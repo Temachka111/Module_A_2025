@@ -50,3 +50,31 @@ h1, h2 {
 .footer {
   border-top: 1px solid rgba(255,255,255,0.08);
 }
+
+
+@media print {
+
+  header,
+  footer,
+  .btn {
+    display: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+
+  .competition-image img {
+    filter: grayscale(100%);
+  }
+
+  .competition-meta {
+    display: none;
+  }
+
+  .competition-review {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+}

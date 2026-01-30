@@ -91,3 +91,14 @@
     padding: 24px;
   }
 }
+
+@media (max-width: 796px) {
+  .competition-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .competition-meta {
+    justify-content: center;
+  }
+}
