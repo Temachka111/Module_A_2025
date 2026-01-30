@@ -3,19 +3,16 @@ body {
   color: #1a1a1a;
 }
 
-/* header */
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
 
-/* footer */
 .footer {
   background-color: #ffffff;
   border-top: 1px solid rgba(0,0,0,0.08);
 }
 
-/* карточки */
 .auth-card,
 .competition-card,
 .feedback-card,
@@ -26,7 +23,6 @@ body {
   box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
-/* инпуты */
 input,
 select {
   background-color: #ffffff;
@@ -34,7 +30,6 @@ select {
   border: 1px solid rgba(0,0,0,0.1);
 }
 
-/* кнопки */
 .btn--primary {
   background-color: #6c5ce7;
   color: #fff;
@@ -45,7 +40,6 @@ select {
   color: #6c5ce7;
 }
 
-/* вторичный текст */
 .feedback-author,
 .subscribe-checkbox,
 .account-subtitle {
