@@ -1,18 +1,153 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Расписание</title>
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/components.css" />
-	<link rel="stylesheet" href="css/theme-dark.css" />
-	<link rel="stylesheet" href="css/media.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание конкурсов — Моя семья — мой космос</title>
+
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme-dark.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-	<main>
-		<h1>Расписание</h1>
-	</main>
-	<script src="js/main.js"></script>
+
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <img src="img/logo/logo.png" alt="Моя семья — мой космос">
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#competitions">Конкурсы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="registration.html" class="btn btn--outline">Регистрация</a>
+      <a href="#login" class="btn btn--primary">Вход</a>
+      <button class="theme-toggle" aria-label="Сменить тему">🌙</button>
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+<section class="section section--schedule">
+  <div class="container">
+
+    <h1>Расписание конкурсов</h1>
+
+    <div class="schedule-wrapper">
+      <table class="schedule-table">
+        
+		<thead>
+			<tr>
+				<th>Конкурс / Время</th>
+				<th>9–10</th>
+				<th>10–11</th>
+				<th>11–12</th>
+				<th>12–13</th>
+				<th>13–14</th>
+				<th>14–15</th>
+				<th>15–16</th>
+				<th>16–17</th>
+				<th>17–18</th>
+				<th>18–19</th>
+				<th>19–20</th>
+				<th>20–21</th>
+			</tr>
+		</thead>
+
+		<tbody>
+			<tr>
+				<th>Конкурс 1</th>
+				<td class="slot free">5</td>
+				<td class="slot free">3</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">2</td>
+				<td class="slot free">4</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">1</td>
+				<td class="slot free">6</td>
+				<td class="slot free">2</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">3</td>
+				<td class="slot free">5</td>
+			</tr>
+
+			<tr>
+				<th>Конкурс 2</th>
+				<td class="slot free">2</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">4</td>
+				<td class="slot free">1</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">3</td>
+				<td class="slot free">5</td>
+				<td class="slot free">2</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">4</td>
+				<td class="slot free">1</td>
+				<td class="slot free">6</td>
+			</tr>
+
+			<tr>
+				<th>Конкурс 3</th>
+				<td class="slot free">1</td>
+				<td class="slot free">2</td>
+				<td class="slot free">3</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">4</td>
+				<td class="slot free">2</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">3</td>
+				<td class="slot free">1</td>
+				<td class="slot free">2</td>
+				<td class="slot busy">0</td>
+				<td class="slot free">4</td>
+			</tr>
+		</tbody>
+
+
+      </table>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <div class="footer__info">
+      <a href="tel:+74842234567">+7 (900) 000-00-00</a>
+      <a href="mailto:family@cosmos.ru">mail@mail.com</a>
+    </div>
+
+	<a href="registration.html" class="btn btn--outline">
+  Регистрация
+	</a>
+
+
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="index-light.html">Главная (светлая)</a></li>
+        <li><a href="registration.html">Регистрация</a></li>
+        <li><a href="competition.html">Конкурс</a></li>
+        <li><a href="account.html">Личный кабинет</a></li>
+        <li><a href="404.html">Страница не найдена</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
 </body>
 </html>

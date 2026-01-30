@@ -423,3 +423,77 @@
   opacity: 0.8;
   margin-top: 6px;
 }
+
+/* расписание */
+
+.section--schedule {
+  padding: 140px 0;
+}
+
+.schedule-wrapper {
+  overflow-x: auto;
+  margin-top: 40px;
+}
+
+.schedule-table {
+  border-collapse: collapse;
+  min-width: 900px;
+  width: 100%;
+}
+
+.schedule-table th,
+.schedule-table td {
+  border: 1px solid rgba(255,255,255,0.1);
+  text-align: center;
+  padding: 10px;
+}
+
+.schedule-table th {
+  background: #0f1224;
+  font-weight: 600;
+}
+
+.slot {
+  width: 60px;
+  height: 60px;
+  font-weight: 600;
+}
+
+.slot.free {
+  background: #1b1f46;
+  color: #fff;
+}
+
+.slot.busy {
+  background: #2a2a2a;
+  color: #777;
+}
+
+/* 404 error  */
+.section--404 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.notfound {
+  max-width: 600px;
+}
+
+.notfound__code {
+  font-size: 120px;
+  font-weight: 800;
+  color: #6c5ce7;
+  margin-bottom: 20px;
+}
+
+.notfound__title {
+  margin-bottom: 16px;
+}
+
+.notfound__text {
+  font-size: 16px;
+  opacity: 0.8;
+  margin-bottom: 32px;
+}

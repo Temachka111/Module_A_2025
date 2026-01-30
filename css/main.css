@@ -4,10 +4,17 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #0b0e1a;
   color: #ffffff;
+
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -34,4 +41,12 @@ h1, h2 {
   height: 40px;
   width: auto;
   display: block;
+}
+
+.main {
+  flex: 1;
+}
+
+.footer {
+  border-top: 1px solid rgba(255,255,255,0.08);
 }
