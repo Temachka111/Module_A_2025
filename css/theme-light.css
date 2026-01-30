@@ -1,9 +1,112 @@
-:root {
-	--bg: #ffffff;
-	--fg: #111111;
+body {
+  background: #f6f7fb;
+  color: #1a1a1a;
 }
 
-body {
-	background: var(--bg);
-	color: var(--fg);
+/* header */
+.header {
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* footer */
+.footer {
+  background-color: #ffffff;
+  border-top: 1px solid rgba(0,0,0,0.08);
+}
+
+/* карточки */
+.auth-card,
+.competition-card,
+.feedback-card,
+.subscribe-card,
+.registration-card,
+.account-card {
+  background: linear-gradient(180deg, #ffffff, #f1f2f6);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* инпуты */
+input,
+select {
+  background-color: #ffffff;
+  color: #1c1c1c;
+  border: 1px solid rgba(0,0,0,0.1);
+}
+
+/* кнопки */
+.btn--primary {
+  background-color: #6c5ce7;
+  color: #fff;
+}
+
+.btn--outline {
+  border-color: #6c5ce7;
+  color: #6c5ce7;
+}
+
+/* вторичный текст */
+.feedback-author,
+.subscribe-checkbox,
+.account-subtitle {
+  color: rgba(0,0,0,0.6);
+}
+
+/* HERO — светлая тема */
+
+.section--hero {
+  min-height: 75vh;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  overflow: hidden;
+
+  background: radial-gradient(
+    circle at top,
+    #ffffff,
+    #eef0f7
+  );
+
+  color: #111;
+}
+
+.section--hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../img/ui/hand-drawn-astronaut-isolated_23-2151558233.avif") center / cover no-repeat;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.hero {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 24px;
+  color: #111;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: rgba(0,0,0,0.7);
+}
+
+.hero .btn {
+  padding: 16px 36px;
+  font-size: 16px;
+}
+
+
+.theme-toggle {
+  background: rgba(108, 92, 231, 0.15);
+  color: #6c5ce7;
 }

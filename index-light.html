@@ -1,18 +1,190 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Главная (светлая)</title>
-	<link rel="stylesheet" href="css/main.css" />
-	<link rel="stylesheet" href="css/components.css" />
-	<link rel="stylesheet" href="css/theme-light.css" />
-	<link rel="stylesheet" href="css/media.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моя семья — мой космос</title>
+
+  <link rel="stylesheet" href="fonts/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/theme-light.css">
+  <link rel="stylesheet" href="css/media.css">
 </head>
+
 <body>
-	<main>
-		<h1>Главная (светлая)</h1>
-	</main>
-	<script src="js/main.js"></script>
+
+<header class="header">
+  <div class="container header__container">
+    <a href="index.html" class="logo">
+      <img src="img/logo/logo.png" alt="Моя семья — мой космос">
+    </a>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#about">О нас</a></li>
+        <li><a href="#competitions">Конкурсы</a></li>
+        <li><a href="#contacts">Контакты</a></li>
+      </ul>
+    </nav>
+
+    <div class="header__actions">
+      <a href="registration.html" class="btn btn--outline">Регистрация</a>
+      <a href="#login" class="btn btn--primary">Вход</a>
+
+      <button class="theme-toggle" aria-label="Сменить тему">
+      <span class="theme-icon">🌙</span>
+      </button>
+
+    </div>
+  </div>
+</header>
+
+<main class="main">
+
+  <section class="section section--hero">
+    <div class="container hero">
+      <h1>Моя семья — мой космос</h1>
+      <p>Городской семейный праздник с космической тематикой</p>
+      <a href="registration.html" class="btn btn--primary">Принять участие</a>
+    </div>
+  </section>
+
+<section class="section section--auth" id="login">
+  <div class="container">
+    <div class="auth-card">
+      <h2 class="auth-title">Вход</h2>
+
+      <form class="auth-form">
+        <input type="email" placeholder="Email" required>
+        <input type="password" placeholder="Пароль" required>
+
+        <button type="submit" class="btn btn--primary btn--full">
+          Войти
+        </button>
+
+        <a href="#" class="auth-link">Забыли пароль?</a>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--about" id="about">
+  <div class="container about">
+    
+    <div class="about__content">
+      <h2>О нас</h2>
+      <p>
+        Проект «Моя семья — мой космос» объединяет семьи, любовь к науке,
+        космосу и активному отдыху.
+      </p>
+    </div>
+
+    <div class="about__image">
+      <img src="img/ui/image-2024-05-15 11_58_24_1_11zon.jpg" alt="О проекте">
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section section--competitions" id="competitions">
+  <div class="container">
+
+    <h2>Конкурсы</h2>
+
+    <div class="competitions-grid">
+      <a href="competition.html" class="competition-card">
+        <h3>Конкурс 1</h3>
+        <p>Описание конкурса</p>
+      </a>
+
+      <a href="competition.html" class="competition-card">
+        <h3>Конкурс 2</h3>
+        <p>Описание конкурса</p>
+      </a>
+
+      <a href="competition.html" class="competition-card">
+        <h3>Конкурс 3</h3>
+        <p>Описание конкурса</p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section section--feedback">
+  <div class="container">
+    <h2>Отзывы</h2>
+
+    <div class="feedback-card">
+      <div class="feedback-avatar">
+        <img src="img/ui/image-26-01-24-01-38.jpeg" alt="Иван Иванов">
+      </div>
+
+      <div class="feedback-content">
+        <p class="feedback-text">
+          Отличное мероприятие для всей семьи!
+        </p>
+        <span class="feedback-author">Иван Иванов</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section section--subscribe">
+  <div class="container">
+    <div class="subscribe-card">
+      <h2>Подписка на новости</h2>
+
+      <form class="subscribe-form">
+        <input type="email" placeholder="Ваш Email" required>
+
+        <label class="subscribe-checkbox">
+          <input type="checkbox" required>
+          Согласие на обработку персональных данных
+        </label>
+
+        <button type="submit" class="btn btn--primary btn--full">
+          Подписаться
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+</main>
+
+<footer class="footer" id="contacts">
+  <div class="container footer__container">
+    <div class="footer__info">
+      <a href="tel:+74842234567">+7 (900) 000-00-00</a>
+      <a href="mailto:family@cosmos.ru">mail@mail.com</a>
+    </div>
+
+	<div class="footer__action">
+	<a href="registration.html" class="btn btn--outline">Регистрация</a>
+	</div>
+
+
+    <nav class="footer__nav">
+      <ul>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="index-light.html">Главная (светлая)</a></li>
+        <li><a href="registration.html">Регистрация</a></li>
+        <li><a href="competition.html">Конкурс</a></li>
+        <li><a href="account.html">Личный кабинет</a></li>
+        <li><a href="404.html">Страница не найдена</a></li>
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
 </body>
 </html>

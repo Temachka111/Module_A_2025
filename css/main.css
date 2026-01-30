@@ -52,6 +52,15 @@ h1, h2 {
 }
 
 
+.section--hero {
+  padding: 140px 0;
+}
+
+.hero {
+  max-width: 720px;
+}
+
+
 @media print {
 
   header,
