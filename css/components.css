@@ -497,3 +497,41 @@
   opacity: 0.8;
   margin-bottom: 32px;
 }
+
+/* аккаунт */
+.section--account {
+  padding: 140px 0;
+}
+
+.account-subtitle {
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.account-card {
+  max-width: 600px;
+  background: linear-gradient(180deg, #1b1f46, #12152e);
+  border-radius: 24px;
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.account-form select,
+.account-form input {
+  height: 46px;
+  padding: 0 14px;
+  border-radius: 10px;
+  border: none;
+  background: #0f1224;
+  color: #fff;
+}
+.section--account .container {
+  text-align: center;
+}
+

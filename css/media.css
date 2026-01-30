@@ -85,3 +85,9 @@
     font-size: 80px;
   }
 }
+
+@media (max-width: 796px) {
+  .account-card {
+    padding: 24px;
+  }
+}
